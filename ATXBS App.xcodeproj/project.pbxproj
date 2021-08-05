@@ -11,6 +11,7 @@
 		608DC3FD26BB2439002CF803 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608DC3FC26BB2439002CF803 /* LaunchView.swift */; };
 		608DC3FF26BB243A002CF803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608DC3FE26BB243A002CF803 /* Assets.xcassets */; };
 		608DC40226BB243A002CF803 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608DC40126BB243A002CF803 /* Preview Assets.xcassets */; };
+		608DC40E26BB2AB8002CF803 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608DC40D26BB2AB8002CF803 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		608DC3FE26BB243A002CF803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		608DC40126BB243A002CF803 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		608DC40326BB243A002CF803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608DC40D26BB2AB8002CF803 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				608DC3FA26BB2439002CF803 /* ATXBSApp.swift */,
+				608DC40926BB24CE002CF803 /* Views */,
 				608DC40C26BB24F3002CF803 /* ViewModels */,
 				608DC40A26BB24D4002CF803 /* Models */,
-				608DC40926BB24CE002CF803 /* Views */,
 				608DC3FE26BB243A002CF803 /* Assets.xcassets */,
 				608DC40326BB243A002CF803 /* Info.plist */,
 				608DC40026BB243A002CF803 /* Preview Content */,
@@ -89,6 +91,7 @@
 		608DC40C26BB24F3002CF803 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				608DC40D26BB2AB8002CF803 /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				608DC3FD26BB2439002CF803 /* LaunchView.swift in Sources */,
 				608DC3FB26BB2439002CF803 /* ATXBSApp.swift in Sources */,
+				608DC40E26BB2AB8002CF803 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
