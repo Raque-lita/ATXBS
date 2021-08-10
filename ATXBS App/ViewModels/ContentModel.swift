@@ -14,6 +14,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     @Published var authorizationState = CLAuthorizationStatus.notDetermined
     @Published var bikerentals = [BikeInfo]()
     @Published var bikepaths = [BikeInfo]()
+    @Published var events = [Event]()
     
     override init() {
         super.init()
@@ -52,7 +53,8 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             
             //if we have coordinates for user, send to yelp API
 //            getYelpInfo(category: "restaurants", location: userLocation!)
-           getYelpInfo(category: Constants.bikerentalsKey, location: userLocation!)
+            getEventInfo()
+            getYelpInfo(category: Constants.bikerentalsKey, location: userLocation!)
          //   getYelpInfo(category: Constants.bicyclepathsKey, location: userLocation!)
             
         }
@@ -125,5 +127,42 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             
         }
         
+    }
+    
+    func getEventInfo() {
+    
+        let url = URL(string: "http://localhost:5000/events")
+        if let url = url {
+                
+                //create URL request
+        var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+                //request.addValue("Bearer \(Constants.apiKey)", forHTTPHeaderField: "Authorization")
+                //get URL session
+        let session = URLSession.shared
+                
+                //create Data Task
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            if error == nil {
+                print("I am here")
+                do {
+                    let decoder = JSONDecoder()
+                    let result = try decoder.decode([Event].self, from: data!)
+                    
+                    DispatchQueue.main.async {
+                    //assign event to property
+                    self.events = result
+                    //print(result)
+        
+                    }
+                }
+                catch {
+                    print(error)
+                }
+
+            }
+        }
+            dataTask.resume()
+        }
     }
 }
