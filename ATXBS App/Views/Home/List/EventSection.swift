@@ -14,8 +14,9 @@ struct EventSection: View {
     var body: some View {
         Section (header: BusinessSectionHeader(title: title)) {
             ForEach(events) { event in
-                Text(event.title ?? "")
-                Divider()
+                EventRow(event: event)
+                
+
             }
         }
 
