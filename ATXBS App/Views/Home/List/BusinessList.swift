@@ -15,6 +15,8 @@ struct BusinessList: View {
         ScrollView (showsIndicators: false) {
             LazyVStack (alignment: .leading, pinnedViews:[.sectionHeaders]) {
                 BusinessSection(title: "Bike Shops", businesses: model.bikerentals)
+                EventSection(title: "Events", events: model.events)
+                
                 }
             
         }

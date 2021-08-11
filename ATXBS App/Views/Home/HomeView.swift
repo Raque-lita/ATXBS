@@ -12,7 +12,7 @@ struct HomeView: View {
     @State var isMapShowing = false
     
     var body: some View {
-        if model.bikerentals.count != 0 {
+        if model.bikerentals.count != 0 || model.events.count != 0 {
             
             //determine if we should show list or map
             if !isMapShowing{

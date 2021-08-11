@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Event: Decodable {
+struct Event: Decodable, Identifiable {
     
     var id: Int?
     var title: String?

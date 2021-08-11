@@ -23,6 +23,7 @@
 		60B0ACB926BEF78600FFFEAA /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACB826BEF78600FFFEAA /* BusinessMap.swift */; };
 		60B0ACBB26C1E26100FFFEAA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACBA26C1E26100FFFEAA /* Event.swift */; };
 		60B0ACBD26C1E2CC00FFFEAA /* EventSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACBC26C1E2CC00FFFEAA /* EventSearch.swift */; };
+		60B0ACC126C3226000FFFEAA /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACC026C3226000FFFEAA /* EventSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		60B0ACB826BEF78600FFFEAA /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 		60B0ACBA26C1E26100FFFEAA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		60B0ACBC26C1E2CC00FFFEAA /* EventSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSearch.swift; sourceTree = "<group>"; };
+		60B0ACC026C3226000FFFEAA /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				60B0ACB526BDA88500FFFEAA /* BusinessSection.swift */,
 				60B0ACB126BD74B400FFFEAA /* BusinessSectionHeader.swift */,
 				60B0ACB326BD7A8F00FFFEAA /* BusinessRow.swift */,
+				60B0ACC026C3226000FFFEAA /* EventSection.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				60B0ACB226BD74B400FFFEAA /* BusinessSectionHeader.swift in Sources */,
 				608DC3FD26BB2439002CF803 /* LaunchView.swift in Sources */,
 				60B0ACBD26C1E2CC00FFFEAA /* EventSearch.swift in Sources */,
+				60B0ACC126C3226000FFFEAA /* EventSection.swift in Sources */,
 				608DC3FB26BB2439002CF803 /* ATXBSApp.swift in Sources */,
 				60B0ACB026BC909D00FFFEAA /* BusinessList.swift in Sources */,
 				608DC40E26BB2AB8002CF803 /* ContentModel.swift in Sources */,
