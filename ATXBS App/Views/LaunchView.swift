@@ -22,6 +22,7 @@ struct LaunchView: View {
             HomeView()
         }
     }
+    
 }
 
 struct LaunchView_Previews: PreviewProvider {

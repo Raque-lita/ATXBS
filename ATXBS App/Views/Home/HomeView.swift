@@ -28,26 +28,46 @@ struct HomeView: View {
                     }
                     Divider()
                     BusinessList()
-                    
-                    
+                    FormView()
                 }
             }
             else {
+                ZStack (alignment: .top) {
                 //show map
                 BusinessMap()
                     .ignoresSafeArea()
-            }
             
+                ZStack (alignment: .top) {
+                    Rectangle()
+                        .foregroundColor(.white)
+                        .cornerRadius(5)
+                        .frame(height: 48)
+                    HStack {
+                        Image(systemName: "location")
+                        Text("Austin")
+                        Spacer()
+                        Button("Switch to list view") {
+                            self.isMapShowing = false
+                        }
+                    
+                    }
+                    .padding()
+                }
+                .padding()
+                }
+            }
         }
-        else {
-            //waiting for info, show spinner
-        ProgressView()
-       
     }
 }
-}
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+//        else {
+//            //waiting for info, show spinner
+//        ProgressView()
+//
+//    }
+//}
+//}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//    }
+//}

@@ -25,6 +25,7 @@
 		60B0ACBD26C1E2CC00FFFEAA /* EventSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACBC26C1E2CC00FFFEAA /* EventSearch.swift */; };
 		60B0ACC126C3226000FFFEAA /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACC026C3226000FFFEAA /* EventSection.swift */; };
 		60B0ACC326C3598D00FFFEAA /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACC226C3598D00FFFEAA /* EventRow.swift */; };
+		60B105EF26C5AB72009C2833 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B105EE26C5AB72009C2833 /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		60B0ACBC26C1E2CC00FFFEAA /* EventSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSearch.swift; sourceTree = "<group>"; };
 		60B0ACC026C3226000FFFEAA /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
 		60B0ACC226C3598D00FFFEAA /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		60B105EE26C5AB72009C2833 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		60B0ACA926BC8CA000FFFEAA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				60B105ED26C5AB60009C2833 /* Event */,
 				60B0ACB726BEF75B00FFFEAA /* Map */,
 				60B0ACAC26BC8E5800FFFEAA /* HomeView.swift */,
 				60B0ACAE26BC906B00FFFEAA /* List */,
@@ -181,6 +184,14 @@
 				60B0ACB826BEF78600FFFEAA /* BusinessMap.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		60B105ED26C5AB60009C2833 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				60B105EE26C5AB72009C2833 /* FormView.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				608DC41526BC4B9C002CF803 /* Constants.swift in Sources */,
 				60B0ACB926BEF78600FFFEAA /* BusinessMap.swift in Sources */,
 				60B0ACB426BD7A8F00FFFEAA /* BusinessRow.swift in Sources */,
+				60B105EF26C5AB72009C2833 /* FormView.swift in Sources */,
 				60B0ACBB26C1E26100FFFEAA /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
