@@ -26,6 +26,7 @@
 		60B0ACC126C3226000FFFEAA /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACC026C3226000FFFEAA /* EventSection.swift */; };
 		60B0ACC326C3598D00FFFEAA /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0ACC226C3598D00FFFEAA /* EventRow.swift */; };
 		60B105EF26C5AB72009C2833 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B105EE26C5AB72009C2833 /* FormView.swift */; };
+		60B105F126C5D082009C2833 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B105F026C5D082009C2833 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		60B0ACC026C3226000FFFEAA /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
 		60B0ACC226C3598D00FFFEAA /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		60B105EE26C5AB72009C2833 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		60B105F026C5D082009C2833 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		60B0ACAB26BC8CAA00FFFEAA /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				60B105F026C5D082009C2833 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				608DC41226BC44A6002CF803 /* BikeInfoSearch.swift in Sources */,
 				60B0ACAD26BC8E5800FFFEAA /* HomeView.swift in Sources */,
 				608DC41026BC43FD002CF803 /* BikeInfo.swift in Sources */,
+				60B105F126C5D082009C2833 /* OnboardingView.swift in Sources */,
 				60B0ACC326C3598D00FFFEAA /* EventRow.swift in Sources */,
 				60B0ACB626BDA88500FFFEAA /* BusinessSection.swift in Sources */,
 				60B0ACB226BD74B400FFFEAA /* BusinessSectionHeader.swift in Sources */,

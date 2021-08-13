@@ -17,6 +17,7 @@ struct LaunchView: View {
         // detet authorization status of geolocating the user
         if model.authorizationState == .notDetermined {
         //if undetermined, show onboarding
+            OnboardingView()
         }
         else if model.authorizationState == .authorizedAlways || model.authorizationState == .authorizedWhenInUse {
             HomeView()
