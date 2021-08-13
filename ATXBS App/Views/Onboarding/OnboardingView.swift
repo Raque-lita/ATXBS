@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    let launchview = LaunchView()
+    
     @EnvironmentObject var model: ContentModel
+    @State private var showingSheet = false
     var body: some View {
         
         VStack{
@@ -27,10 +28,13 @@ struct OnboardingView: View {
             print("hello world")
         }
         Button("Create Bike Event"){
-            FormView()
+            showingSheet = true
+        }
+        .sheet(isPresented: $showingSheet) {
+            FormView(showingSheet: $showingSheet, model: model)
         }
         
         
-}
-
+    }
+    
 }

@@ -28,7 +28,7 @@ struct HomeView: View {
                     }
                     Divider()
                     BusinessList()
-                    FormView()
+                  //  FormView(model: model)
                 }
             }
             else {
