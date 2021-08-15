@@ -34,14 +34,18 @@ struct BusinessMap: UIViewRepresentable {
        //make user show up on map
        mapView.showsUserLocation = true
        mapView.userTrackingMode = .followWithHeading
-       DispatchQueue.main.async{
+        for location in model.events {
+       DispatchQueue.main.async {
+        
+        if let locay = location.location, let title = location.title {
            //loop through calling add antoation get coordinate
-       mapView.addAnnotation(getCoordinate(addressString: "Oakland"))
+                mapView.addAnnotation(getCoordinate(addressString: locay, titleString: title))
        }
-     
-       return mapView
+       }
+       
    }
-    
+        return mapView
+    }
     func updateUIView(_ uiView: MKMapView, context: Context) {
         //remove all annotations
         uiView.removeAnnotations(uiView.annotations)
@@ -54,13 +58,13 @@ struct BusinessMap: UIViewRepresentable {
     static func dismantleUIView(_ uiView: MKMapView, coordinator: ()) {
         
     }
-    func getCoordinate( addressString : String) -> MKPointAnnotation {
-        
+    func getCoordinate( addressString : String, titleString: String) -> MKPointAnnotation {
+        var events = model.events
         let geocoder = CLGeocoder()
         var annotations2 = [CLPlacemark]()
         var a = MKPointAnnotation()
         DispatchQueue.main.async {
-            geocoder.geocodeAddressString("Oakland") { (placemarks, error) in
+            geocoder.geocodeAddressString(addressString) { (placemarks, error) in
             if error == nil {
                 if (placemarks?[0]) != nil {
                     var location1 = placemarks! as [CLPlacemark]
@@ -69,7 +73,7 @@ struct BusinessMap: UIViewRepresentable {
                     var long = location1[0].location?.coordinate.longitude
         
                     a.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: long!)
-                    a.title = "TEST"
+                    a.title = titleString
                 }
             }
             print(error ?? "")
