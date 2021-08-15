@@ -31,9 +31,11 @@ struct FormView: View {
                             if result == true {
                                 showingSheet = false
                             }
+                            model.getEventInfo()
                         }
-                        
-            
+                    }
+                    Button("Cancel"){
+                        showingSheet = false
                     }
                 }
             }.navigationBarTitle("Bike Event!")

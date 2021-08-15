@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var model: ContentModel
     @State var isMapShowing = false
+    @State private var showingSheet = false
     
     var body: some View {
         if model.bikerentals.count != 0 || model.events.count != 0 {
@@ -25,7 +26,15 @@ struct HomeView: View {
                         Button("Switch to map view") {
                             self.isMapShowing = true
                         }
-                    }
+                        Spacer()
+                        Button("Create Bike Event"){
+                            showingSheet = true
+                        }
+                        .sheet(isPresented: $showingSheet) {
+                            FormView(showingSheet: $showingSheet, model: model)
+                        }
+                    
+                }
                     Divider()
                     BusinessList()
                   //  FormView(model: model)
