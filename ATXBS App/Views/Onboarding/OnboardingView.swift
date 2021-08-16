@@ -17,9 +17,11 @@ struct OnboardingView: View {
             Image("AustinBike")
                 .resizable()
                 .scaledToFit()
+                .padding()
             Text("Austin Texas Bike Stuff")
                 .bold()
                 .font(.title)
+                .padding()
             Text("ATXBS helps users aggregate bike info, and create events")
         }
         

@@ -26,9 +26,10 @@ struct EventRow: View {
 //                     .scaledToFit()
                  
                  //name and distance
-                 VStack{
+                VStack (alignment: .leading) {
                      Text(event.title ?? "")
                          .bold()
+                        
                     Text(event.location ?? "")
                          .font(.caption)
      
