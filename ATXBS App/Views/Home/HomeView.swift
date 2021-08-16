@@ -15,6 +15,8 @@ struct HomeView: View {
     var body: some View {
         if model.bikerentals.count != 0 || model.events.count != 0 {
             
+            NavigationView {
+            
             //determine if we should show list or map
             if !isMapShowing{
                 //show list
@@ -39,7 +41,10 @@ struct HomeView: View {
                     BusinessList()
                   //  FormView(model: model)
                 }
+                .padding([.horizontal, .top])
+                .navigationBarHidden(true)
             }
+            
             else {
                 ZStack (alignment: .top) {
                 //show map
@@ -67,6 +72,7 @@ struct HomeView: View {
             }
         }
     }
+}
 }
 //        else {
 //            //waiting for info, show spinner

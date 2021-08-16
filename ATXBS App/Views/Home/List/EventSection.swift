@@ -14,6 +14,7 @@ struct EventSection: View {
     var body: some View {
         Section (header: BusinessSectionHeader(title: title)) {
             ForEach(events) { event in
+                NavigationLink(destination: EventDetail()) {
                 EventRow(event: event)
                 
 
@@ -22,4 +23,5 @@ struct EventSection: View {
 
 
     }
+}
 }

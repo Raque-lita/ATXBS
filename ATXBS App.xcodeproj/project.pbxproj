@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60533E5F26CAEB6E00F232FB /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60533E5E26CAEB6E00F232FB /* BusinessDetail.swift */; };
+		60533E6126CAEDBB00F232FB /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60533E6026CAEDBB00F232FB /* EventDetail.swift */; };
 		608DC3FB26BB2439002CF803 /* ATXBSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608DC3FA26BB2439002CF803 /* ATXBSApp.swift */; };
 		608DC3FD26BB2439002CF803 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608DC3FC26BB2439002CF803 /* LaunchView.swift */; };
 		608DC3FF26BB243A002CF803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608DC3FE26BB243A002CF803 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60533E5E26CAEB6E00F232FB /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		60533E6026CAEDBB00F232FB /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 		608DC3F726BB2439002CF803 /* ATXBS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ATXBS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		608DC3FA26BB2439002CF803 /* ATXBSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATXBSApp.swift; sourceTree = "<group>"; };
 		608DC3FC26BB2439002CF803 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60533E5726CAEA4600F232FB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				60533E5E26CAEB6E00F232FB /* BusinessDetail.swift */,
+				60533E6026CAEDBB00F232FB /* EventDetail.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		608DC3EE26BB2439002CF803 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +184,7 @@
 		60B0ACAE26BC906B00FFFEAA /* List */ = {
 			isa = PBXGroup;
 			children = (
+				60533E5726CAEA4600F232FB /* Detail */,
 				60B0ACAF26BC909D00FFFEAA /* BusinessList.swift */,
 				60B0ACB526BDA88500FFFEAA /* BusinessSection.swift */,
 				60B0ACB126BD74B400FFFEAA /* BusinessSectionHeader.swift */,
@@ -267,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				608DC41226BC44A6002CF803 /* BikeInfoSearch.swift in Sources */,
+				60533E5F26CAEB6E00F232FB /* BusinessDetail.swift in Sources */,
 				60B0ACAD26BC8E5800FFFEAA /* HomeView.swift in Sources */,
 				608DC41026BC43FD002CF803 /* BikeInfo.swift in Sources */,
 				60B105F126C5D082009C2833 /* OnboardingView.swift in Sources */,
@@ -278,6 +293,7 @@
 				60B0ACC126C3226000FFFEAA /* EventSection.swift in Sources */,
 				608DC3FB26BB2439002CF803 /* ATXBSApp.swift in Sources */,
 				60B0ACB026BC909D00FFFEAA /* BusinessList.swift in Sources */,
+				60533E6126CAEDBB00F232FB /* EventDetail.swift in Sources */,
 				608DC40E26BB2AB8002CF803 /* ContentModel.swift in Sources */,
 				608DC41526BC4B9C002CF803 /* Constants.swift in Sources */,
 				60B0ACB926BEF78600FFFEAA /* BusinessMap.swift in Sources */,

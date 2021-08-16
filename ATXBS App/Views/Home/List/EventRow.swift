@@ -39,6 +39,7 @@ struct EventRow: View {
              }
              Divider()
          }
+         .foregroundColor(.black)
     
      }
 
