@@ -29,7 +29,7 @@ struct OnboardingView: View {
             model.requestGeolocationsPermision()
             print("hello world")
         }
-        Button("Create Bike Event"){
+        Button("Create Event"){
             showingSheet = true
         }
         .sheet(isPresented: $showingSheet) {

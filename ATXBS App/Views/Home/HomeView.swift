@@ -25,11 +25,11 @@ struct HomeView: View {
                         Image(systemName: "location")
                         Text("Austin")
                         Spacer()
-                        Button("Switch to map view") {
+                        Button("Switch to Map View") {
                             self.isMapShowing = true
                         }
                         Spacer()
-                        Button("Create Bike Event"){
+                        Button("Create Event"){
                             showingSheet = true
                         }
                         .sheet(isPresented: $showingSheet) {
