@@ -24,10 +24,15 @@ struct HomeView: View {
                     HStack {
                         Image(systemName: "location")
                         Text("Austin")
+                    }
+                    HStack {
                         Spacer()
                         Button("Switch to Map View") {
                             self.isMapShowing = true
                         }
+                        
+                    }
+                    HStack {
                         Spacer()
                         Button("Create Event"){
                             showingSheet = true
@@ -37,6 +42,7 @@ struct HomeView: View {
                         }
                     
                 }
+                
                     Divider()
                     BusinessList()
                   //  FormView(model: model)
