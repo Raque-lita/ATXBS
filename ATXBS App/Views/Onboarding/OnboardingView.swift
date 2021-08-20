@@ -22,7 +22,10 @@ struct OnboardingView: View {
                 .bold()
                 .font(.title)
                 .padding()
-            Text("ATXBS helps users aggregate bike info, and create events")
+            Text("ATXBS helps users Create and Find Bike Resources. Click Create Event to create a ride event, or See Bike Info for local bike shops and rides happening near you")
+                .bold()
+                .font(.subheadline)
+                .padding()
         }
         
         Button("See List of Bike Info") {

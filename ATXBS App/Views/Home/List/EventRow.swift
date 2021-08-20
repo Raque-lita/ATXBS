@@ -19,13 +19,13 @@ struct EventRow: View {
              HStack {
                  //Image
 //                 let uiImage = UIImage(data: business.imageData ?? Data())
-//                 Image(uiImage: uiImage ?? UIImage())
-//                     .resizable()
-//                     .frame(width:58, height:58)
-//                     .cornerRadius(5)
-//                     .scaledToFit()
+                 Image("CyclePack")
+                     .resizable()
+                     .frame(width:58, height:58)
+                     .cornerRadius(5)
+                     .scaledToFit()
                  
-                 //name and distance
+              
                 VStack (alignment: .leading) {
                      Text(event.title ?? "")
                          .bold()

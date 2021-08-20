@@ -21,9 +21,10 @@ struct HomeView: View {
             if !isMapShowing{
                 //show list
                 VStack (alignment: .leading) {
+                    Spacer()
                     HStack {
                         Image(systemName: "location")
-                        Text("Austin")
+                        Text("Oakland")
                     }
                     HStack {
                         Spacer()

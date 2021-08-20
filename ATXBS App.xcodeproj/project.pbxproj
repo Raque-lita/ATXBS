@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60533E5F26CAEB6E00F232FB /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60533E5E26CAEB6E00F232FB /* BusinessDetail.swift */; };
 		60533E6126CAEDBB00F232FB /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60533E6026CAEDBB00F232FB /* EventDetail.swift */; };
+		60533E6326CDDA7D00F232FB /* CyclePack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 60533E6226CDDA7D00F232FB /* CyclePack.jpeg */; };
 		608DC3FB26BB2439002CF803 /* ATXBSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608DC3FA26BB2439002CF803 /* ATXBSApp.swift */; };
 		608DC3FD26BB2439002CF803 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608DC3FC26BB2439002CF803 /* LaunchView.swift */; };
 		608DC3FF26BB243A002CF803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608DC3FE26BB243A002CF803 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		60533E5E26CAEB6E00F232FB /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 		60533E6026CAEDBB00F232FB /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		60533E6226CDDA7D00F232FB /* CyclePack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CyclePack.jpeg; path = ../../../../Downloads/CyclePack.jpeg; sourceTree = "<group>"; };
 		608DC3F726BB2439002CF803 /* ATXBS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ATXBS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		608DC3FA26BB2439002CF803 /* ATXBSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATXBSApp.swift; sourceTree = "<group>"; };
 		608DC3FC26BB2439002CF803 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				608DC41126BC44A6002CF803 /* BikeInfoSearch.swift */,
 				60B0ACBA26C1E26100FFFEAA /* Event.swift */,
 				60B0ACBC26C1E2CC00FFFEAA /* EventSearch.swift */,
+				60533E6226CDDA7D00F232FB /* CyclePack.jpeg */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60533E6326CDDA7D00F232FB /* CyclePack.jpeg in Resources */,
 				608DC40226BB243A002CF803 /* Preview Assets.xcassets in Resources */,
 				608DC3FF26BB243A002CF803 /* Assets.xcassets in Resources */,
 			);
